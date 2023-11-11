@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(49, 9, 82);
+    
+    background-color: rgb(57, 13, 94);
     color: ghostwhite;
     text-align: center;
     font-size: larger;
@@ -9,6 +10,19 @@ body{
 header{
     color: rgb(244, 119, 11);
     font-size: 50px;
+}
+.getSbuttons{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.blinkdiv{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.container{
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    height: auto;
 }
 h1{
     color: rgb(244, 119, 11);
@@ -30,14 +44,14 @@ span{
     font-size: larger;
     font-family: sans-serif;
 }
-div{
+/* div{
     background-color: rgb(39, 108, 107);
     color: ghostwhite;
     text-align: center;
     font-size: larger;
     font-style: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 #skeleton
 {
     background-image: url("https://img.freepik.com/premium-photo/halloween-horror-scary-background-with-zombie-skeleton-ghost-generative-ai_124507-63949.jpg");
@@ -76,6 +90,54 @@ margin-left: 0%;
 img:hover{
     transform: scale(1.5);
 }
-h2:hover{
-   background-image: ; 
+
+.tooltip {
+    position: static;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  audio{
+    visibility: hidden;
+  }
+  #boiler{
+    color: red;
+  }
+  p{
+    background-color:white;
+    color: blueviolet;
+  } 
+
+  #homeStart{
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    body { 
+        display: flex;
+        grid-template-columns: 0.2fr 0.2fr;
+        background-color: red; }
+}
+@media screen and (min-width: 401px) and (max-width: 599px) {
+    body { background-color: green; }
+}
+@media screen and (min-width: 600px) {
+    body { background-color: purple; }
 }
